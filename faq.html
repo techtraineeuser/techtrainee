@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Frequently Asked Questions about TechTrainee courses, training programs, job guarantee, and enrollment process.">
+    <meta name="keywords" content="FAQ, frequently asked questions, TechTrainee, online training, job guarantee, course enrollment">
+    <meta name="author" content="TechTrainee">
+    <title>TechTrainee - Frequently Asked Questions</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <style>
+        .hero-section {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            position: relative;
+            overflow: hidden;
+        }
+        .hero-section::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url('https://images.unsplash.com/photo-1516321318423-f06f85e504b3?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80') center/cover;
+            opacity: 0.1;
+            z-index: 1;
+        }
+        .hero-content { position: relative; z-index: 2; }
+        .faq-card {
+            background: white;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            margin-bottom: 20px;
+            overflow: hidden;
+            transition: all 0.3s ease;
+        }
+        .faq-card:hover { transform: translateY(-5px); }
+        .faq-header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 20px;
+            cursor: pointer;
+        }
+        .faq-body { padding: 20px; border-top: 1px solid #eee; }
+        .contact-card {
+            background: white;
+            border-radius: 15px;
+            padding: 30px;
+            text-align: center;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            height: 100%;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="index.html">
+                <i class="fas fa-graduation-cap me-2"></i>TechTrainee
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html#courses">Courses</a></li>
+                    <li class="nav-item"><a class="nav-link" href="software-services.html">Services</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="faq.html">FAQ</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <div class="container">
+            <div class="row align-items-center min-vh-100 hero-content">
+                <div class="col-lg-8 mx-auto text-center">
+                    <h1 class="display-4 fw-bold text-white mb-4">Frequently Asked Questions</h1>
+                    <p class="lead mb-4 text-white">Find answers to common questions about our training programs, job guarantee, and enrollment process</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center mb-5">
+                    <h2 class="display-5 fw-bold text-primary">Frequently Asked Questions</h2>
+                    <p class="lead text-muted">Get answers to all your questions about TechTrainee programs</p>
+                </div>
+            </div>
+            
+            <!-- General Questions -->
+            <div class="row mb-5">
+                <div class="col-12">
+                    <h3 class="text-primary mb-4"><i class="fas fa-info-circle me-2"></i>General Questions</h3>
+                </div>
+                <div class="col-12">
+                    <div class="accordion" id="generalFAQ">
+                        <div class="faq-card">
+                            <div class="faq-header" id="general1" data-bs-toggle="collapse" data-bs-target="#general1Content">
+                                <h5 class="mb-0">What is TechTrainee and what courses do you offer?</h5>
+                            </div>
+                            <div id="general1Content" class="collapse show" data-bs-parent="#generalFAQ">
+                                <div class="faq-body">
+                                    <p>TechTrainee offers 5 specialized courses: ASP.NET Core with C#, Django (Python), Automation Testing, Business Intelligence (Data Analysis), and Frontend Development. All courses are 3-month intensive programs designed to make you job-ready.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="faq-card">
+                            <div class="faq-header" id="general2" data-bs-toggle="collapse" data-bs-target="#general2Content">
+                                <h5 class="mb-0">Do you offer job guarantee with your courses?</h5>
+                            </div>
+                            <div id="general2Content" class="collapse" data-bs-parent="#generalFAQ">
+                                <div class="faq-body">
+                                    <p><strong>Yes, we offer 100% job guarantee!</strong> This includes interview preparation, resume building, job placement assistance, and support until you get placed. Our success rate is over 95%.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="faq-card">
+                            <div class="faq-header" id="general3" data-bs-toggle="collapse" data-bs-target="#general3Content">
+                                <h5 class="mb-0">What are the eligibility criteria for your courses?</h5>
+                            </div>
+                            <div id="general3Content" class="collapse" data-bs-parent="#generalFAQ">
+                                <div class="faq-body">
+                                    <p>We welcome candidates from all backgrounds - any degree/diploma, year gap candidates, non-IT background, and working professionals. No prior programming experience is required as we start from basics.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Course & Training Questions -->
+            <div class="row mb-5">
+                <div class="col-12">
+                    <h3 class="text-primary mb-4"><i class="fas fa-graduation-cap me-2"></i>Course & Training Questions</h3>
+                </div>
+                <div class="col-12">
+                    <div class="accordion" id="courseFAQ">
+                        <div class="faq-card">
+                            <div class="faq-header" id="course1" data-bs-toggle="collapse" data-bs-target="#course1Content">
+                                <h5 class="mb-0">What is the duration and schedule of your courses?</h5>
+                            </div>
+                            <div id="course1Content" class="collapse" data-bs-parent="#courseFAQ">
+                                <div class="faq-body">
+                                    <p><strong>Duration:</strong> 3 months intensive programs<br>
+                                    <strong>Schedule:</strong> Monday to Friday, 1 Hour per Day<br>
+                                    <strong>Weekend Batch:</strong> Saturday and Sunday (3 hours per session)<br>
+                                    We offer flexible timings to accommodate different schedules.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="faq-card">
+                            <div class="faq-header" id="course2" data-bs-toggle="collapse" data-bs-target="#course2Content">
+                                <h5 class="mb-0">Do you offer demo classes before enrollment?</h5>
+                            </div>
+                            <div id="course2Content" class="collapse" data-bs-parent="#courseFAQ">
+                                <div class="faq-body">
+                                    <p><strong>Yes, we offer 3 days of free online demo classes!</strong> This allows you to experience our teaching methodology, interact with trainers, and understand the course structure before enrolling.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="faq-card">
+                            <div class="faq-header" id="course3" data-bs-toggle="collapse" data-bs-target="#course3Content">
+                                <h5 class="mb-0">Who are your trainers and what is their experience?</h5>
+                            </div>
+                            <div id="course3Content" class="collapse" data-bs-parent="#courseFAQ">
+                                <div class="faq-body">
+                                    <p>Our trainers are <strong>industry working professionals</strong> with 10+ years experience working at top tech companies. They bring real project experience, current industry practices, and practical insights to make your learning valuable.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Enrollment & Payment Questions -->
+            <div class="row mb-5">
+                <div class="col-12">
+                    <h3 class="text-primary mb-4"><i class="fas fa-credit-card me-2"></i>Enrollment & Payment Questions</h3>
+                </div>
+                <div class="col-12">
+                    <div class="accordion" id="enrollmentFAQ">
+                        <div class="faq-card">
+                            <div class="faq-header" id="enrollment1" data-bs-toggle="collapse" data-bs-target="#enrollment1Content">
+                                <h5 class="mb-0">How can I enroll in a course?</h5>
+                            </div>
+                            <div id="enrollment1Content" class="collapse" data-bs-parent="#enrollmentFAQ">
+                                <div class="faq-body">
+                                    <p>Contact us at +91 9352686522 or email techtrainee.in@gmail.com. Attend 3 days of free demo classes, choose your course and batch, complete payment, and get immediate access to course materials.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="faq-card">
+                            <div class="faq-header" id="enrollment2" data-bs-toggle="collapse" data-bs-target="#enrollment2Content">
+                                <h5 class="mb-0">What are the course fees and payment options?</h5>
+                            </div>
+                            <div id="enrollment2Content" class="collapse" data-bs-parent="#enrollmentFAQ">
+                                <div class="faq-body">
+                                    <p><strong>Fees:</strong> Regular Price INR 20,000, Discounted Price INR 15,000<br>
+                                    <strong>Payment Options:</strong> Online payment, EMI options, installments, and corporate billing available.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="faq-card">
+                            <div class="faq-header" id="enrollment3" data-bs-toggle="collapse" data-bs-target="#enrollment3Content">
+                                <h5 class="mb-0">Do you offer refunds if I'm not satisfied?</h5>
+                            </div>
+                            <div id="enrollment3Content" class="collapse" data-bs-parent="#enrollmentFAQ">
+                                <div class="faq-body">
+                                    <p>We offer 7-day money back guarantee, course transfer options, and batch transfer flexibility. We're committed to your satisfaction and provide continuous support.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Job & Career Questions -->
+            <div class="row mb-5">
+                <div class="col-12">
+                    <h3 class="text-primary mb-4"><i class="fas fa-briefcase me-2"></i>Job & Career Questions</h3>
+                </div>
+                <div class="col-12">
+                    <div class="accordion" id="careerFAQ">
+                        <div class="faq-card">
+                            <div class="faq-header" id="career1" data-bs-toggle="collapse" data-bs-target="#career1Content">
+                                <h5 class="mb-0">How does your job guarantee work?</h5>
+                            </div>
+                            <div id="career1Content" class="collapse" data-bs-parent="#careerFAQ">
+                                <div class="faq-body">
+                                    <p>Complete course assignments, build portfolio, prepare resume, attend interview training, get placement assistance, and receive ongoing support until placement. We work with 100+ companies and ensure placement within 6 months.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="faq-card">
+                            <div class="faq-header" id="career2" data-bs-toggle="collapse" data-bs-target="#career2Content">
+                                <h5 class="mb-0">What is the average salary after completing your courses?</h5>
+                            </div>
+                            <div id="career2Content" class="collapse" data-bs-parent="#careerFAQ">
+                                <div class="faq-body">
+                                    <p>Salary ranges from 3-8 LPA depending on course, experience, and performance. Our students have achieved salaries from 3 LPA to 12 LPA based on their skills and market conditions.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="faq-card">
+                            <div class="faq-header" id="career3" data-bs-toggle="collapse" data-bs-target="#career3Content">
+                                <h5 class="mb-0">Do you help with interview preparation?</h5>
+                            </div>
+                            <div id="career3Content" class="collapse" data-bs-parent="#careerFAQ">
+                                <div class="faq-body">
+                                    <p>Yes, we provide comprehensive interview preparation including technical interviews, mock interviews, behavioral questions, resume review, portfolio guidance, and salary negotiation tips.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-5 bg-light">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center mb-5">
+                    <h2 class="display-5 fw-bold text-primary">Still Have Questions?</h2>
+                    <p class="lead text-muted">Get in touch with us for personalized assistance</p>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="row g-4">
+                        <div class="col-md-6">
+                            <div class="contact-card">
+                                <i class="fab fa-whatsapp text-success fa-3x mb-3"></i>
+                                <h5>WhatsApp</h5>
+                                <p class="text-muted">Quick answers to your questions</p>
+                                <a href="https://wa.me/919352686522" class="btn btn-success" target="_blank">
+                                    <i class="fab fa-whatsapp me-2"></i>+91 9352686522
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="contact-card">
+                                <i class="fas fa-envelope text-primary fa-3x mb-3"></i>
+                                <h5>Email</h5>
+                                <p class="text-muted">Detailed queries and support</p>
+                                <a href="mailto:techtrainee.in@gmail.com" class="btn btn-primary">
+                                    <i class="fas fa-envelope me-2"></i>techtrainee.in@gmail.com
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <div class="contact-card">
+                                <i class="fas fa-map-marker-alt text-danger fa-3x mb-3"></i>
+                                <h5>Visit Our Office</h5>
+                                <p class="text-muted">Tech Trainee, Near Shiv Circle, Devi Nagar, New Sanganer Road, Jaipur, Rajasthan 302019</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h5 class="mb-3"><i class="fas fa-graduation-cap me-2"></i>TechTrainee</h5>
+                    <p class="text-muted">Empowering learners with quality education. Training from industry professionals with job guarantee.</p>
+                </div>
+                <div class="col-md-3">
+                    <h6 class="mb-3">Quick Links</h6>
+                    <ul class="list-unstyled">
+                        <li><a href="index.html" class="text-muted text-decoration-none">Home</a></li>
+                        <li><a href="index.html#courses" class="text-muted text-decoration-none">Courses</a></li>
+                        <li><a href="software-services.html" class="text-muted text-decoration-none">Services</a></li>
+                        <li><a href="faq.html" class="text-muted text-decoration-none">FAQ</a></li>
+                        <li><a href="#contact" class="text-muted text-decoration-none">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <h6 class="mb-3">Connect</h6>
+                    <div class="social-links">
+                        <a href="#" class="text-muted me-3"><i class="fab fa-facebook fa-lg"></i></a>
+                        <a href="#" class="text-muted me-3"><i class="fab fa-twitter fa-lg"></i></a>
+                        <a href="#" class="text-muted me-3"><i class="fab fa-linkedin fa-lg"></i></a>
+                        <a href="#" class="text-muted"><i class="fab fa-youtube fa-lg"></i></a>
+                    </div>
+                </div>
+            </div>
+            <hr class="my-4">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <p class="text-muted mb-0">&copy; 2024 TechTrainee. All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html> 

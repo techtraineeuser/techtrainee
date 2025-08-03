@@ -1,0 +1,623 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="TechTrainee provides professional web development services, custom web applications, and expert developers for hire. Get quality solutions at competitive rates.">
+    <meta name="keywords" content="web development, web application development, custom software, developers for hire, software services, TechTrainee, web design, programming services">
+    <meta name="author" content="TechTrainee">
+    <meta property="og:title" content="TechTrainee - Software Development Services">
+    <meta property="og:description" content="Professional web development services and expert developers for hire. Quality solutions at competitive rates.">
+    <meta property="og:type" content="website">
+    <title>TechTrainee - Software Development Services | Web Development & Developer Provision</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <style>
+        .hero-section {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .hero-section::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url('https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80') center/cover;
+            opacity: 0.1;
+            z-index: 1;
+        }
+        
+        .hero-content {
+            position: relative;
+            z-index: 2;
+        }
+        
+        .service-card {
+            background: white;
+            border-radius: 15px;
+            padding: 30px;
+            text-align: center;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            transition: all 0.3s ease;
+            height: 100%;
+            border: none;
+        }
+        
+        .service-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+        }
+        
+        .service-icon {
+            width: 80px;
+            height: 80px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 20px;
+            color: white;
+            font-size: 2rem;
+        }
+        
+        .comparison-table {
+            background: white;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            overflow: hidden;
+        }
+        
+        .comparison-table .table {
+            margin-bottom: 0;
+        }
+        
+        .comparison-table .table th {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            border: none;
+            padding: 20px 15px;
+            text-align: center;
+            font-weight: 600;
+        }
+        
+        .comparison-table .table td {
+            padding: 20px 15px;
+            border: none;
+            border-bottom: 1px solid #eee;
+            vertical-align: middle;
+        }
+        
+        .comparison-table .table tr:hover {
+            background-color: #f8f9fa;
+        }
+        
+        .feature-badge {
+            background: linear-gradient(135deg, #28a745 0%, #20c997 100%);
+            color: white;
+            padding: 5px 10px;
+            border-radius: 20px;
+            font-size: 0.8rem;
+            font-weight: 600;
+        }
+        
+        .contact-card {
+            background: white;
+            border-radius: 15px;
+            padding: 30px;
+            text-align: center;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            transition: all 0.3s ease;
+            height: 100%;
+        }
+        
+        .contact-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+        }
+        
+        .process-step {
+            background: white;
+            border-radius: 15px;
+            padding: 30px;
+            text-align: center;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            transition: all 0.3s ease;
+            height: 100%;
+            position: relative;
+        }
+        
+        .process-step::before {
+            content: '';
+            position: absolute;
+            top: 50%;
+            right: -50px;
+            width: 100px;
+            height: 2px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            transform: translateY(-50%);
+            z-index: -1;
+        }
+        
+        .process-step:last-child::before {
+            display: none;
+        }
+        
+        .step-number {
+            width: 60px;
+            height: 60px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 20px;
+            color: white;
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+        
+        @media (max-width: 768px) {
+            .process-step::before {
+                display: none;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="index.html">
+                <i class="fas fa-graduation-cap me-2"></i>TechTrainee
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html#courses">Courses</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="software-services.html">Services</a>
+                    </li>
+                                                <li class="nav-item">
+                                <a class="nav-link" href="faq.html">FAQ</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="index.html#about">About</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#contact">Contact</a>
+                            </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <div class="container">
+            <div class="row align-items-center min-vh-100 hero-content">
+                <div class="col-lg-6">
+                    <h1 class="display-4 fw-bold text-white mb-4">
+                        Professional Software Development Services
+                    </h1>
+                    <p class="lead mb-4 text-white">
+                        We deliver high-quality web applications, custom software solutions, and provide expert developers to help your business grow and succeed in the digital world.
+                    </p>
+                    <div class="d-flex flex-wrap gap-3 mb-4">
+                        <span class="badge bg-light text-primary fs-6 px-3 py-2">
+                            <i class="fas fa-code me-2"></i>Custom Development
+                        </span>
+                        <span class="badge bg-light text-primary fs-6 px-3 py-2">
+                            <i class="fas fa-users me-2"></i>Expert Developers
+                        </span>
+                        <span class="badge bg-light text-primary fs-6 px-3 py-2">
+                            <i class="fas fa-rocket me-2"></i>Fast Delivery
+                        </span>
+                    </div>
+                    <a href="#services" class="btn btn-light btn-lg me-3">
+                        <i class="fas fa-arrow-down me-2"></i>Our Services
+                    </a>
+                    <a href="#contact" class="btn btn-outline-light btn-lg">
+                        <i class="fas fa-phone me-2"></i>Get Quote
+                    </a>
+                </div>
+                <div class="col-lg-6 text-center">
+                    <img src="https://images.unsplash.com/photo-1551650975-87deedd944c3?ixlib=rb-4.0.3&auto=format&fit=crop&w=2074&q=80" 
+                         alt="Software Development" class="img-fluid rounded-3 shadow-lg">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center mb-5">
+                    <h2 class="display-5 fw-bold text-primary">Our Services</h2>
+                    <p class="lead text-muted">Comprehensive software solutions tailored to your business needs</p>
+                </div>
+            </div>
+            <div class="row g-4">
+                <div class="col-lg-4 col-md-6">
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-globe"></i>
+                        </div>
+                        <h4 class="mb-3">Website Development</h4>
+                        <p class="text-muted mb-4">
+                            Professional websites that are responsive, SEO-optimized, and designed to convert visitors into customers.
+                        </p>
+                        <ul class="list-unstyled text-start">
+                            <li><i class="fas fa-check text-success me-2"></i>Responsive Design</li>
+                            <li><i class="fas fa-check text-success me-2"></i>SEO Optimization</li>
+                            <li><i class="fas fa-check text-success me-2"></i>Content Management</li>
+                            <li><i class="fas fa-check text-success me-2"></i>E-commerce Integration</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-mobile-alt"></i>
+                        </div>
+                        <h4 class="mb-3">Web Application Development</h4>
+                        <p class="text-muted mb-4">
+                            Custom web applications built with modern technologies to streamline your business processes.
+                        </p>
+                        <ul class="list-unstyled text-start">
+                            <li><i class="fas fa-check text-success me-2"></i>Custom Solutions</li>
+                            <li><i class="fas fa-check text-success me-2"></i>Database Integration</li>
+                            <li><i class="fas fa-check text-success me-2"></i>API Development</li>
+                            <li><i class="fas fa-check text-success me-2"></i>Cloud Deployment</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-user-tie"></i>
+                        </div>
+                        <h4 class="mb-3">Developer Provision</h4>
+                        <p class="text-muted mb-4">
+                            Hire skilled developers on a project basis or long-term contracts to augment your development team.
+                        </p>
+                        <ul class="list-unstyled text-start">
+                            <li><i class="fas fa-check text-success me-2"></i>Expert Developers</li>
+                            <li><i class="fas fa-check text-success me-2"></i>Flexible Contracts</li>
+                            <li><i class="fas fa-check text-success me-2"></i>Quality Assurance</li>
+                            <li><i class="fas fa-check text-success me-2"></i>Ongoing Support</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Development Process -->
+    <section class="py-5 bg-light">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center mb-5">
+                    <h2 class="display-5 fw-bold text-primary">Our Development Process</h2>
+                    <p class="lead text-muted">A proven methodology that ensures successful project delivery</p>
+                </div>
+            </div>
+            <div class="row g-4">
+                <div class="col-lg-3 col-md-6">
+                    <div class="process-step">
+                        <div class="step-number">1</div>
+                        <h5 class="mb-3">Discovery & Planning</h5>
+                        <p class="text-muted">We analyze your requirements, create detailed specifications, and plan the development roadmap.</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="process-step">
+                        <div class="step-number">2</div>
+                        <h5 class="mb-3">Design & Prototyping</h5>
+                        <p class="text-muted">Our designers create wireframes and prototypes to visualize the final product before development.</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="process-step">
+                        <div class="step-number">3</div>
+                        <h5 class="mb-3">Development & Testing</h5>
+                        <p class="text-muted">Expert developers build your solution with regular testing to ensure quality and functionality.</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="process-step">
+                        <div class="step-number">4</div>
+                        <h5 class="mb-3">Deployment & Support</h5>
+                        <p class="text-muted">We deploy your solution and provide ongoing support and maintenance to ensure smooth operation.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Comparison Table -->
+    <section class="py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center mb-5">
+                    <h2 class="display-5 fw-bold text-primary">TechTrainee vs Freelancers vs Big Agencies</h2>
+                    <p class="lead text-muted">What is Better for You?</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <div class="comparison-table">
+                        <table class="table table-hover">
+                            <thead>
+                                <tr>
+                                    <th>Features</th>
+                                    <th>TechTrainee</th>
+                                    <th>Freelancers</th>
+                                    <th>Big Agencies</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><strong>Project Cost</strong></td>
+                                    <td><span class="feature-badge">Competitive</span><br><small class="text-muted">Best value for money</small></td>
+                                    <td><span class="badge bg-warning text-dark">Variable</span><br><small class="text-muted">Can be unpredictable</small></td>
+                                    <td><span class="badge bg-danger">Expensive</span><br><small class="text-muted">High overhead costs</small></td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Quality Assurance</strong></td>
+                                    <td><span class="feature-badge">Guaranteed</span><br><small class="text-muted">Rigorous testing process</small></td>
+                                    <td><span class="badge bg-warning text-dark">Variable</span><br><small class="text-muted">Depends on individual</small></td>
+                                    <td><span class="feature-badge">High</span><br><small class="text-muted">Professional standards</small></td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Communication</strong></td>
+                                    <td><span class="feature-badge">Excellent</span><br><small class="text-muted">Direct & responsive</small></td>
+                                    <td><span class="badge bg-warning text-dark">Inconsistent</span><br><small class="text-muted">Time zone issues</small></td>
+                                    <td><span class="badge bg-secondary">Formal</span><br><small class="text-muted">Multiple layers</small></td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Project Timeline</strong></td>
+                                    <td><span class="feature-badge">Reliable</span><br><small class="text-muted">On-time delivery</small></td>
+                                    <td><span class="badge bg-warning text-dark">Uncertain</span><br><small class="text-muted">Multiple projects</small></td>
+                                    <td><span class="badge bg-secondary">Slow</span><br><small class="text-muted">Bureaucratic process</small></td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Technical Expertise</strong></td>
+                                    <td><span class="feature-badge">Expert</span><br><small class="text-muted">Latest technologies</small></td>
+                                    <td><span class="badge bg-warning text-dark">Limited</span><br><small class="text-muted">Specialized skills</small></td>
+                                    <td><span class="feature-badge">Comprehensive</span><br><small class="text-muted">Wide range</small></td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Support & Maintenance</strong></td>
+                                    <td><span class="feature-badge">Included</span><br><small class="text-muted">Long-term support</small></td>
+                                    <td><span class="badge bg-danger">Limited</span><br><small class="text-muted">Project completion</small></td>
+                                    <td><span class="feature-badge">Available</span><br><small class="text-muted">Additional cost</small></td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Scalability</strong></td>
+                                    <td><span class="feature-badge">Flexible</span><br><small class="text-muted">Easy to scale</small></td>
+                                    <td><span class="badge bg-danger">Limited</span><br><small class="text-muted">Individual capacity</small></td>
+                                    <td><span class="feature-badge">High</span><br><small class="text-muted">Large teams</small></td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Risk Management</strong></td>
+                                    <td><span class="feature-badge">Low Risk</span><br><small class="text-muted">Guaranteed delivery</small></td>
+                                    <td><span class="badge bg-danger">High Risk</span><br><small class="text-muted">No guarantees</small></td>
+                                    <td><span class="badge bg-secondary">Medium</span><br><small class="text-muted">Corporate process</small></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Technologies We Use -->
+    <section class="py-5 bg-light">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center mb-5">
+                    <h2 class="display-5 fw-bold text-primary">Technologies We Use</h2>
+                    <p class="lead text-muted">Modern tech stack for building robust and scalable solutions</p>
+                </div>
+            </div>
+            <div class="row g-4">
+                <div class="col-lg-2 col-md-4 col-6 text-center">
+                    <div class="p-3">
+                        <i class="fab fa-html5 fa-3x text-danger mb-2"></i>
+                        <h6>HTML5</h6>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-4 col-6 text-center">
+                    <div class="p-3">
+                        <i class="fab fa-css3-alt fa-3x text-primary mb-2"></i>
+                        <h6>CSS3</h6>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-4 col-6 text-center">
+                    <div class="p-3">
+                        <i class="fab fa-js-square fa-3x text-warning mb-2"></i>
+                        <h6>JavaScript</h6>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-4 col-6 text-center">
+                    <div class="p-3">
+                        <i class="fab fa-react fa-3x text-info mb-2"></i>
+                        <h6>React</h6>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-4 col-6 text-center">
+                    <div class="p-3">
+                        <i class="fab fa-python fa-3x text-success mb-2"></i>
+                        <h6>Python</h6>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-4 col-6 text-center">
+                    <div class="p-3">
+                        <i class="fab fa-node-js fa-3x text-success mb-2"></i>
+                        <h6>Node.js</h6>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-4 col-6 text-center">
+                    <div class="p-3">
+                        <i class="fab fa-php fa-3x text-primary mb-2"></i>
+                        <h6>PHP</h6>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-4 col-6 text-center">
+                    <div class="p-3">
+                        <i class="fab fa-java fa-3x text-danger mb-2"></i>
+                        <h6>Java</h6>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-4 col-6 text-center">
+                    <div class="p-3">
+                        <i class="fab fa-angular fa-3x text-danger mb-2"></i>
+                        <h6>Angular</h6>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-4 col-6 text-center">
+                    <div class="p-3">
+                        <i class="fab fa-vuejs fa-3x text-success mb-2"></i>
+                        <h6>Vue.js</h6>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-4 col-6 text-center">
+                    <div class="p-3">
+                        <i class="fab fa-aws fa-3x text-warning mb-2"></i>
+                        <h6>AWS</h6>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-4 col-6 text-center">
+                    <div class="p-3">
+                        <i class="fab fa-docker fa-3x text-info mb-2"></i>
+                        <h6>Docker</h6>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-5 bg-light">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center mb-5">
+                    <h2 class="display-5 fw-bold text-primary">Get Started Today</h2>
+                    <p class="lead text-muted">Ready to transform your business with our software solutions?</p>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="row g-4">
+                        <div class="col-md-6">
+                            <div class="contact-card">
+                                <i class="fab fa-whatsapp text-success fa-3x mb-3"></i>
+                                <h5>WhatsApp</h5>
+                                <p class="text-muted">For project discussions and quotes</p>
+                                <a href="https://wa.me/919352686522" class="btn btn-success" target="_blank">
+                                    <i class="fab fa-whatsapp me-2"></i>+91 9352686522
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="contact-card">
+                                <i class="fas fa-envelope text-primary fa-3x mb-3"></i>
+                                <h5>Email</h5>
+                                <p class="text-muted">Send us your project requirements</p>
+                                <a href="mailto:techtrainee.in@gmail.com" class="btn btn-primary">
+                                    <i class="fas fa-envelope me-2"></i>techtrainee.in@gmail.com
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <div class="contact-card">
+                                <i class="fas fa-map-marker-alt text-danger fa-3x mb-3"></i>
+                                <h5>Our Office</h5>
+                                <p class="text-muted">Tech Trainee, Near Shiv Circle, Devi Nagar, New Sanganer Road, Jaipur, Rajasthan 302019</p>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <div class="contact-card">
+                                <h5 class="mb-3">Find Us on Map</h5>
+                                <div class="map-container">
+                                    <iframe
+                                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3558.5!2d75.750729!3d26.8867782!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x396db6b0b0b0b0b0%3A0x0!2sShiv+Circle+Devi+Nagar!5e0!3m2!1sen!2sin!4v1234567890"
+                                        width="100%"
+                                        height="300"
+                                        style="border:0; border-radius: 10px;"
+                                        allowfullscreen=""
+                                        loading="lazy"
+                                        referrerpolicy="no-referrer-when-downgrade">
+                                    </iframe>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h5 class="mb-3">
+                        <i class="fas fa-graduation-cap me-2"></i>TechTrainee
+                    </h5>
+                    <p class="text-muted">
+                        Professional software development services and training solutions. We help businesses grow with custom web applications and expert developers.
+                    </p>
+                </div>
+                <div class="col-md-3">
+                    <h6 class="mb-3">Quick Links</h6>
+                    <ul class="list-unstyled">
+                                                        <li><a href="index.html" class="text-muted text-decoration-none">Home</a></li>
+                                <li><a href="index.html#courses" class="text-muted text-decoration-none">Courses</a></li>
+                                <li><a href="software-services.html" class="text-muted text-decoration-none">Services</a></li>
+                                <li><a href="faq.html" class="text-muted text-decoration-none">FAQ</a></li>
+                                <li><a href="index.html#about" class="text-muted text-decoration-none">About</a></li>
+                                <li><a href="#contact" class="text-muted text-decoration-none">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <h6 class="mb-3">Connect</h6>
+                    <div class="social-links">
+                        <a href="#" class="text-muted me-3"><i class="fab fa-facebook fa-lg"></i></a>
+                        <a href="#" class="text-muted me-3"><i class="fab fa-twitter fa-lg"></i></a>
+                        <a href="#" class="text-muted me-3"><i class="fab fa-linkedin fa-lg"></i></a>
+                        <a href="#" class="text-muted"><i class="fab fa-youtube fa-lg"></i></a>
+                    </div>
+                </div>
+            </div>
+            <hr class="my-4">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <p class="text-muted mb-0">
+                        &copy; 2024 TechTrainee. All rights reserved.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html> 

@@ -1,0 +1,431 @@
+{
+  "courses": [
+    {
+      "id": "aspnet-core",
+      "title": "ASP.NET Core with C#",
+      "description": "Learn C# programming first, then master ASP.NET Core web development with Entity Framework and Azure deployment. Build scalable, high-performance web applications from scratch.",
+      "duration": "3 Months",
+      "level": "Beginner to Advanced",
+      "language": "Hindi + English",
+      "image": "images/aspnet-core.jpg",
+      "modules": [
+        {
+          "title": "C# Programming Fundamentals",
+          "duration": "3 Weeks",
+          "topics": [
+            "Introduction to C# and .NET",
+            "C# Syntax and Data Types",
+            "Control Structures and Loops",
+            "Methods and Functions",
+            "Object-Oriented Programming",
+            "Exception Handling"
+          ]
+        },
+        {
+          "title": "ASP.NET Core Fundamentals",
+          "duration": "3 Weeks",
+          "topics": [
+            "Introduction to ASP.NET Core",
+            "Setting up Development Environment",
+            "Understanding MVC Pattern",
+            "Routing and Controllers",
+            "Views and Razor Syntax",
+            "Model Binding and Validation"
+          ]
+        },
+        {
+          "title": "Entity Framework Core",
+          "duration": "2 Weeks",
+          "topics": [
+            "Introduction to Entity Framework",
+            "Code First Approach",
+            "Database Migrations",
+            "LINQ Queries",
+            "Relationships and Navigation",
+            "Performance Optimization"
+          ]
+        },
+        {
+          "title": "Web API Development",
+          "duration": "2 Weeks",
+          "topics": [
+            "RESTful API Principles",
+            "API Controllers",
+            "HTTP Methods and Status Codes",
+            "API Documentation with Swagger",
+            "API Testing and Debugging",
+            "API Security Best Practices"
+          ]
+        },
+        {
+          "title": "Azure Deployment & DevOps",
+          "duration": "2 Weeks",
+          "topics": [
+            "Azure App Service",
+            "Azure SQL Database",
+            "CI/CD with Azure DevOps",
+            "Environment Configuration",
+            "Monitoring and Logging",
+            "Performance Optimization"
+          ]
+        },
+        {
+          "title": "Advanced Topics & Project",
+          "duration": "2 Weeks",
+          "topics": [
+            "SignalR for Real-time Communication",
+            "Background Services",
+            "Caching Strategies",
+            "Microservices Architecture",
+            "Final Project Development",
+            "Project Deployment and Presentation"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "django",
+      "title": "Django (Python)",
+      "description": "Learn Python programming first, then master Django framework, Django REST Framework, and FastAPI for web development. Build scalable web applications with rapid development capabilities.",
+      "duration": "3 Months",
+      "level": "Beginner to Advanced",
+      "language": "Hindi + English",
+      "image": "images/django.jpg",
+      "modules": [
+        {
+          "title": "Python Programming Fundamentals",
+          "duration": "3 Weeks",
+          "topics": [
+            "Python Basics and Syntax",
+            "Data Types and Variables",
+            "Control Structures",
+            "Functions and Modules",
+            "Object-Oriented Programming",
+            "File Handling"
+          ]
+        },
+        {
+          "title": "Django Framework",
+          "duration": "3 Weeks",
+          "topics": [
+            "Introduction to Django",
+            "Django Project Structure",
+            "URLs and Views",
+            "Templates and Static Files",
+            "Forms and Validation",
+            "Django Admin Interface"
+          ]
+        },
+        {
+          "title": "Database Design",
+          "duration": "2 Weeks",
+          "topics": [
+            "Django ORM",
+            "Models and Fields",
+            "Database Migrations",
+            "Relationships",
+            "QuerySets",
+            "Database Optimization"
+          ]
+        },
+        {
+          "title": "Django REST Framework",
+          "duration": "2 Weeks",
+          "topics": [
+            "Introduction to REST APIs",
+            "Serializers",
+            "ViewSets and Routers",
+            "Authentication",
+            "API Documentation",
+            "Testing APIs"
+          ]
+        },
+        {
+          "title": "FastAPI Development",
+          "duration": "2 Weeks",
+          "topics": [
+            "Introduction to FastAPI",
+            "FastAPI Basics",
+            "Path Operations",
+            "Request Body and Validation",
+            "Database Integration",
+            "Authentication and Security"
+          ]
+        },
+        {
+          "title": "Deployment & Project",
+          "duration": "2 Weeks",
+          "topics": [
+            "Environment Setup",
+            "Static Files Management",
+            "Database Configuration",
+            "Deployment to Cloud",
+            "Final Project Development",
+            "Project Presentation"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "automation-testing",
+      "title": "Automation Testing",
+      "description": "Learn manual testing overview, Python programming, Selenium with Python, and Playwright with Python. Master the art of automated software testing and quality assurance.",
+      "duration": "3 Months",
+      "level": "Beginner to Advanced",
+      "language": "Hindi + English",
+      "image": "images/automation-testing.jpg",
+      "modules": [
+        {
+          "title": "Manual Testing Overview",
+          "duration": "2 Weeks",
+          "topics": [
+            "Introduction to Software Testing",
+            "Testing Types and Levels",
+            "Test Case Design",
+            "Bug Reporting",
+            "Test Planning",
+            "Manual Testing Tools"
+          ]
+        },
+        {
+          "title": "Python Programming",
+          "duration": "3 Weeks",
+          "topics": [
+            "Python Basics and Syntax",
+            "Data Types and Variables",
+            "Control Structures",
+            "Functions and Modules",
+            "Object-Oriented Programming",
+            "File Handling"
+          ]
+        },
+        {
+          "title": "Selenium with Python",
+          "duration": "3 Weeks",
+          "topics": [
+            "Introduction to Selenium",
+            "Selenium WebDriver",
+            "Element Locators",
+            "WebDriver Commands",
+            "Handling Different Elements",
+            "Test Framework Design"
+          ]
+        },
+        {
+          "title": "Playwright with Python",
+          "duration": "3 Weeks",
+          "topics": [
+            "Introduction to Playwright",
+            "Playwright Installation",
+            "Browser Automation",
+            "Page Object Model",
+            "Cross-browser Testing",
+            "Mobile Testing"
+          ]
+        },
+        {
+          "title": "Advanced Automation",
+          "duration": "2 Weeks",
+          "topics": [
+            "Test Data Management",
+            "Reporting and Logging",
+            "Parallel Execution",
+            "CI/CD Integration",
+            "Performance Testing",
+            "API Testing"
+          ]
+        },
+        {
+          "title": "Project & Best Practices",
+          "duration": "2 Weeks",
+          "topics": [
+            "Real-time Project",
+            "Test Framework Design",
+            "Best Practices",
+            "Code Review",
+            "Interview Preparation",
+            "Project Presentation"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "business-intelligence",
+      "title": "Business Intelligence (Data Analysis)",
+      "description": "Master Excel, SQL, advanced queries, Power BI, Tableau, Python, and Pandas for comprehensive data analysis. Learn to transform raw data into actionable business insights.",
+      "duration": "3 Months",
+      "level": "Beginner to Advanced",
+      "language": "Hindi + English",
+      "image": "images/business-intelligence.jpg",
+      "modules": [
+        {
+          "title": "Excel Advanced Functions",
+          "duration": "3 Weeks",
+          "topics": [
+            "Advanced Excel Formulas",
+            "Pivot Tables and Charts",
+            "Data Analysis Tools",
+            "VBA Macros",
+            "Power Query",
+            "Data Modeling"
+          ]
+        },
+        {
+          "title": "SQL and Advanced Queries",
+          "duration": "3 Weeks",
+          "topics": [
+            "SQL Fundamentals",
+            "Database Design",
+            "Advanced Queries",
+            "Stored Procedures",
+            "Data Warehousing",
+            "Performance Optimization"
+          ]
+        },
+        {
+          "title": "Power BI Development",
+          "duration": "3 Weeks",
+          "topics": [
+            "Power BI Desktop",
+            "Data Transformation",
+            "DAX Formulas",
+            "Visualization Design",
+            "Power BI Service",
+            "Report Publishing"
+          ]
+        },
+        {
+          "title": "Tableau Visualization",
+          "duration": "2 Weeks",
+          "topics": [
+            "Tableau Desktop",
+            "Data Connection",
+            "Calculated Fields",
+            "Advanced Charts",
+            "Dashboard Creation",
+            "Story Development"
+          ]
+        },
+        {
+          "title": "Python and Pandas",
+          "duration": "3 Weeks",
+          "topics": [
+            "Python Basics",
+            "Pandas Library",
+            "Data Manipulation",
+            "Data Cleaning",
+            "Statistical Analysis",
+            "Data Visualization"
+          ]
+        },
+        {
+          "title": "Advanced Analytics & Project",
+          "duration": "2 Weeks",
+          "topics": [
+            "Predictive Analytics",
+            "Machine Learning Basics",
+            "Business Intelligence Project",
+            "Dashboard Development",
+            "Report Automation",
+            "Project Presentation"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "frontend-development",
+      "title": "Frontend Development",
+      "description": "Learn HTML, CSS, Bootstrap, modern JavaScript, jQuery, and React.js or Next.js for comprehensive web development. Build responsive, interactive, and modern web applications from scratch.",
+      "duration": "3 Months",
+      "level": "Beginner to Advanced",
+      "language": "Hindi + English",
+      "image": "images/frontend-development.jpg",
+      "modules": [
+        {
+          "title": "HTML5 & CSS3",
+          "duration": "3 Weeks",
+          "topics": [
+            "HTML5 Structure and Semantics",
+            "CSS3 Styling and Layout",
+            "Flexbox and Grid Systems",
+            "Responsive Design Principles",
+            "CSS Animations and Transitions",
+            "CSS Preprocessors (SASS/SCSS)"
+          ]
+        },
+        {
+          "title": "Bootstrap Framework",
+          "duration": "2 Weeks",
+          "topics": [
+            "Bootstrap Grid System",
+            "Components and Utilities",
+            "Responsive Navigation",
+            "Forms and Validation",
+            "Custom Bootstrap Themes",
+            "Bootstrap JavaScript Components"
+          ]
+        },
+        {
+          "title": "Modern JavaScript (ES6+)",
+          "duration": "3 Weeks",
+          "topics": [
+            "JavaScript Fundamentals",
+            "ES6+ Features (Arrow Functions, Destructuring)",
+            "DOM Manipulation",
+            "Event Handling",
+            "Asynchronous JavaScript (Promises, Async/Await)",
+            "Modules and Import/Export"
+          ]
+        },
+        {
+          "title": "jQuery Library",
+          "duration": "2 Weeks",
+          "topics": [
+            "jQuery Basics and Selectors",
+            "DOM Manipulation with jQuery",
+            "Event Handling",
+            "AJAX with jQuery",
+            "jQuery Plugins",
+            "jQuery UI Components"
+          ]
+        },
+        {
+          "title": "React.js Development",
+          "duration": "3 Weeks",
+          "topics": [
+            "React Fundamentals",
+            "Components and Props",
+            "State and Lifecycle",
+            "Hooks (useState, useEffect)",
+            "Routing with React Router",
+            "State Management (Context API)"
+          ]
+        },
+        {
+          "title": "Next.js & Advanced Topics",
+          "duration": "2 Weeks",
+          "topics": [
+            "Next.js Framework",
+            "Server-Side Rendering (SSR)",
+            "Static Site Generation (SSG)",
+            "API Routes",
+            "Performance Optimization",
+            "Deployment and Hosting"
+          ]
+        }
+      ]
+    }
+  ],
+  "contact": {
+    "whatsapp": "+91 9352686522",
+    "whatsappLink": "https://wa.me/919352686522",
+    "email": "techtrainee.in@gmail.com",
+    "address": "Tech Trainee, Near Shiv Circle, Devi Nagar, New Sanganer Road, Jaipur, Rajasthan 302019"
+  },
+  "social": {
+    "facebook": "#",
+    "twitter": "#",
+    "linkedin": "#",
+    "youtube": "#"
+  }
+} 
