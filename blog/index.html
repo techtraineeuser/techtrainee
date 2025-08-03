@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explore our comprehensive blog articles on software development, programming languages, and IT training. Expert insights and career guidance from TechTrainee.">
+    <meta name="keywords" content="software development blog, programming blog, IT training blog, web development, Python, Java, Django, frontend, backend, Jaipur IT training">
+    <meta name="author" content="TechTrainee">
+    <title>TechTrainee Blog - Software Development & IT Training Insights</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="../css/style.css" rel="stylesheet">
+    <style>
+        .blog-hero {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 120px 0 80px;
+        }
+        .blog-card {
+            background: white;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            overflow: hidden;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            height: 100%;
+        }
+        .blog-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+        }
+        .blog-card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+        .blog-card .card-body {
+            padding: 25px;
+        }
+        .blog-card h5 {
+            color: #667eea;
+            margin-bottom: 15px;
+            font-weight: 600;
+        }
+        .blog-card p {
+            color: #6c757d;
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+        .blog-meta {
+            color: #6c757d;
+            font-size: 0.9rem;
+            margin-bottom: 15px;
+        }
+        .blog-meta i {
+            margin-right: 5px;
+        }
+        .read-more {
+            color: #667eea;
+            text-decoration: none;
+            font-weight: 600;
+            transition: color 0.3s ease;
+        }
+        .read-more:hover {
+            color: #764ba2;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="../index.html">
+                <i class="fas fa-graduation-cap me-2"></i>TechTrainee
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="../index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="../index.html#courses">Courses</a></li>
+                    <li class="nav-item"><a class="nav-link" href="../software-services.html">Services</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="index.html">Blog</a></li>
+                    <li class="nav-item"><a class="nav-link" href="../faq.html">FAQ</a></li>
+                    <li class="nav-item"><a class="nav-link" href="../index.html#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="../index.html#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="blog-hero">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 mx-auto text-center">
+                    <h1 class="display-4 fw-bold mb-4">TechTrainee Blog</h1>
+                    <p class="lead mb-4">Expert insights on software development, programming languages, and IT training. Stay updated with the latest trends and career guidance.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Blog Posts Section -->
+    <section class="py-5">
+        <div class="container">
+            <div class="row g-4">
+                <!-- Blog Post 1 -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="blog-card">
+                        <img src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" alt="Frontend vs Backend Development">
+                        <div class="card-body">
+                            <div class="blog-meta">
+                                <span><i class="fas fa-calendar"></i>February 10, 2025</span>
+                                <span class="ms-3"><i class="fas fa-clock"></i>12 min read</span>
+                            </div>
+                            <h5>Front-End vs Back-End: What Should You Learn First?</h5>
+                            <p>A detailed guide to help you choose between front-end and back-end development based on your interests and goals. Learn the differences and career paths.</p>
+                            <a href="frontend-vs-backend-learn-first.html" class="read-more">
+                                Read More <i class="fas fa-arrow-right ms-1"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Blog Post 2 -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="blog-card">
+                        <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" alt="Full Stack Development Guide">
+                        <div class="card-body">
+                            <div class="blog-meta">
+                                <span><i class="fas fa-calendar"></i>January 25, 2025</span>
+                                <span class="ms-3"><i class="fas fa-clock"></i>15 min read</span>
+                            </div>
+                            <h5>Complete Guide to Full Stack Development in Jaipur</h5>
+                            <p>Everything you need to know about becoming a full stack developer in Jaipur. From learning path to job opportunities and salary expectations.</p>
+                            <a href="full-stack-development-guide-jaipur.html" class="read-more">
+                                Read More <i class="fas fa-arrow-right ms-1"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Blog Post 3 -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="blog-card">
+                        <img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" alt="Jaipur IT Training Hub">
+                        <div class="card-body">
+                            <div class="blog-meta">
+                                <span><i class="fas fa-calendar"></i>January 20, 2025</span>
+                                <span class="ms-3"><i class="fas fa-clock"></i>10 min read</span>
+                            </div>
+                            <h5>Why Jaipur is Becoming the Next IT Training Hub</h5>
+                            <p>Discover why Jaipur is emerging as a premier destination for IT training and software development education. Explore the city's growing tech ecosystem.</p>
+                            <a href="jaipur-it-software-training-hub.html" class="read-more">
+                                Read More <i class="fas fa-arrow-right ms-1"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Blog Post 4 -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="blog-card">
+                        <img src="https://images.unsplash.com/photo-1517077304055-6e89abbf09b0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" alt="Python vs Java">
+                        <div class="card-body">
+                            <div class="blog-meta">
+                                <span><i class="fas fa-calendar"></i>January 15, 2025</span>
+                                <span class="ms-3"><i class="fas fa-clock"></i>8 min read</span>
+                            </div>
+                            <h5>Python vs Java: Which Language Should You Learn in 2025?</h5>
+                            <p>Comprehensive comparison between Python and Java for beginners. Understand the differences, use cases, and career opportunities for each language.</p>
+                            <a href="python-vs-java-2025.html" class="read-more">
+                                Read More <i class="fas fa-arrow-right ms-1"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Blog Post 5 -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="blog-card">
+                        <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" alt="Top Programming Languages">
+                        <div class="card-body">
+                            <div class="blog-meta">
+                                <span><i class="fas fa-calendar"></i>January 30, 2025</span>
+                                <span class="ms-3"><i class="fas fa-clock"></i>10 min read</span>
+                            </div>
+                            <h5>Top 5 In-Demand Programming Languages to Learn in 2025</h5>
+                            <p>Discover which programming languages are most sought after by employers and offer the best career prospects in the current market.</p>
+                            <a href="top-programming-languages-2025.html" class="read-more">
+                                Read More <i class="fas fa-arrow-right ms-1"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Blog Post 6 -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="blog-card">
+                        <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" alt="Software Development Courses Jaipur">
+                        <div class="card-body">
+                            <div class="blog-meta">
+                                <span><i class="fas fa-calendar"></i>February 15, 2025</span>
+                                <span class="ms-3"><i class="fas fa-clock"></i>15 min read</span>
+                            </div>
+                            <h5>Top 5 Software Development Courses in Jaipur – With Fees & Duration</h5>
+                            <p>Comprehensive guide to the best software development courses available in Jaipur with detailed pricing and duration information.</p>
+                            <a href="top-software-courses-jaipur-fees-duration.html" class="read-more">
+                                Read More <i class="fas fa-arrow-right ms-1"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Blog Post 7 -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="blog-card">
+                        <img src="https://images.unsplash.com/photo-1551434678-e076c223a692?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" alt="Django Python Job Market">
+                        <div class="card-body">
+                            <div class="blog-meta">
+                                <span><i class="fas fa-calendar"></i>February 5, 2025</span>
+                                <span class="ms-3"><i class="fas fa-clock"></i>8 min read</span>
+                            </div>
+                            <h5>Why Learn Django with Python in Today's Job Market?</h5>
+                            <p>Explore the benefits of learning Django framework and how it can accelerate your career in web development. Discover job opportunities and market demand.</p>
+                            <a href="why-learn-django-python-job-market.html" class="read-more">
+                                Read More <i class="fas fa-arrow-right ms-1"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h5 class="mb-3">
+                        <i class="fas fa-graduation-cap me-2"></i>TechTrainee
+                    </h5>
+                    <p class="text-muted">
+                        Empowering learners with quality education. Training from industry professionals with job guarantee.
+                    </p>
+                </div>
+                <div class="col-md-3">
+                    <h6 class="mb-3">Quick Links</h6>
+                    <ul class="list-unstyled">
+                        <li><a href="../index.html" class="text-muted text-decoration-none">Home</a></li>
+                        <li><a href="../index.html#courses" class="text-muted text-decoration-none">Courses</a></li>
+                        <li><a href="../software-services.html" class="text-muted text-decoration-none">Services</a></li>
+                        <li><a href="index.html" class="text-muted text-decoration-none">Blog</a></li>
+                        <li><a href="../faq.html" class="text-muted text-decoration-none">FAQ</a></li>
+                        <li><a href="../index.html#about" class="text-muted text-decoration-none">About</a></li>
+                        <li><a href="../index.html#contact" class="text-muted text-decoration-none">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <h6 class="mb-3">Connect</h6>
+                    <div class="social-links">
+                        <a href="#" class="text-muted me-3"><i class="fab fa-facebook fa-lg"></i></a>
+                        <a href="#" class="text-muted me-3"><i class="fab fa-twitter fa-lg"></i></a>
+                        <a href="#" class="text-muted me-3"><i class="fab fa-linkedin fa-lg"></i></a>
+                        <a href="#" class="text-muted"><i class="fab fa-youtube fa-lg"></i></a>
+                    </div>
+                </div>
+            </div>
+            <hr class="my-4">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <p class="text-muted mb-0">
+                        &copy; 2024 TechTrainee. All rights reserved.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../js/script.js"></script>
+</body>
+</html> 
